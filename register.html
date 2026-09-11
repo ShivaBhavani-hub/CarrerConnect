@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | CareerConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+            <a href="index.html" class="auth-logo">
+                Career<span>Connect</span>
+            </a>
+
+            <h1>Create Your Account</h1>
+
+            <p class="auth-subtitle">
+                Start building your career today.
+            </p>
+
+
+            <form onsubmit="registerUser(event)">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    placeholder="Create a password"
+                    required
+                >
+
+
+                <label>Career Interest</label>
+
+                <select required>
+
+                    <option value="">
+                        Select your interest
+                    </option>
+
+                    <option>Web Development</option>
+                    <option>App Development</option>
+                    <option>UI/UX Design</option>
+                    <option>Data Science</option>
+                    <option>Artificial Intelligence</option>
+
+                </select>
+
+
+                <button type="submit" class="auth-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <p class="auth-footer">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

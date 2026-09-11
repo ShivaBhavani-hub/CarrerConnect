@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Opportunities | CareerConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Career<span>Connect</span>
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="jobs.html" class="active">
+                    Opportunities
+                </a>
+            </li>
+
+            <li>
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+        <a href="login.html" class="nav-login">
+            Login
+        </a>
+
+    </nav>
+
+
+    <main class="jobs-page">
+
+        <div class="jobs-heading">
+
+            <p class="small-title">
+                EXPLORE
+            </p>
+
+            <h1>Find Your Opportunity</h1>
+
+            <p>
+                Discover opportunities that match your skills
+                and career interests.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="jobSearch"
+                placeholder="Search opportunities..."
+                onkeyup="searchJobs()"
+            >
+
+            <select>
+
+                <option>All Categories</option>
+                <option>Development</option>
+                <option>Design</option>
+                <option>Data</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- JOB LIST -->
+
+        <div class="job-list">
+
+
+            <div class="job-card-full">
+
+                <div class="company-logo">
+                    TN
+                </div>
+
+                <div class="job-details">
+
+                    <h2>Frontend Developer Intern</h2>
+
+                    <p>TechNova · Remote</p>
+
+                    <div class="tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                </div>
+
+                <div class="job-action">
+
+                    <span class="job-type">
+                        Internship
+                    </span>
+
+                    <button
+                        class="apply-btn"
+                        onclick="applyJob()"
+                    >
+                        Apply
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="job-card-full">
+
+                <div class="company-logo">
+                    CL
+                </div>
+
+                <div class="job-details">
+
+                    <h2>UI/UX Design Intern</h2>
+
+                    <p>CreativeLabs · Hyderabad</p>
+
+                    <div class="tags">
+
+                        <span>Figma</span>
+                        <span>UI Design</span>
+                        <span>UX</span>
+
+                    </div>
+
+                </div>
+
+                <div class="job-action">
+
+                    <span class="job-type">
+                        Internship
+                    </span>
+
+                    <button
+                        class="apply-btn"
+                        onclick="applyJob()"
+                    >
+                        Apply
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="job-card-full">
+
+                <div class="company-logo">
+                    CW
+                </div>
+
+                <div class="job-details">
+
+                    <h2>JavaScript Developer</h2>
+
+                    <p>CodeWorks · Bengaluru</p>
+
+                    <div class="tags">
+
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Git</span>
+
+                    </div>
+
+                </div>
+
+                <div class="job-action">
+
+                    <span class="job-type">
+                        Full Time
+                    </span>
+
+                    <button
+                        class="apply-btn"
+                        onclick="applyJob()"
+                    >
+                        Apply
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="job-card-full">
+
+                <div class="company-logo">
+                    AI
+                </div>
+
+                <div class="job-details">
+
+                    <h2>Data Analyst Intern</h2>
+
+                    <p>InsightAI · Remote</p>
+
+                    <div class="tags">
+
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Excel</span>
+
+                    </div>
+
+                </div>
+
+                <div class="job-action">
+
+                    <span class="job-type">
+                        Internship
+                    </span>
+
+                    <button
+                        class="apply-btn"
+                        onclick="applyJob()"
+                    >
+                        Apply
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
