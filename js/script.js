@@ -85,5 +85,21 @@ function searchJobs() {
         }
 
     });
+    /* =========================================
+   GOOGLE ANALYTICS
+========================================= */
+
+const exploreButton =
+    document.querySelector('a[href="jobs.html"].primary-btn');
+
+if (exploreButton) {
+
+    exploreButton.addEventListener("click", function () {
+
+        gtag("event", "explore_opportunities_click");
+
+    });
+
+}
 
 }
