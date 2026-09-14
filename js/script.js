@@ -85,7 +85,7 @@ function searchJobs() {
         }
 
     });
-    /* =========================================
+   /* =========================================
    GOOGLE ANALYTICS
 ========================================= */
 
@@ -94,9 +94,17 @@ const exploreButton =
 
 if (exploreButton) {
 
-    exploreButton.addEventListener("click", function () {
+    exploreButton.addEventListener("click", function (event) {
 
-        gtag("event", "explore_opportunities_click");
+        event.preventDefault();
+
+        gtag("event", "explore_opportunities_click", {
+
+            event_callback: function () {
+                window.location.href = "jobs.html";
+            }
+
+        });
 
     });
 
