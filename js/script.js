@@ -101,6 +101,7 @@ if (exploreButton) {
         gtag("event", "explore_opportunities_click", {
 
             event_callback: function () {
+                debug_mode: true;
                 window.location.href = "jobs.html";
             }
 
