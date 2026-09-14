@@ -68,7 +68,6 @@ function searchJobs() {
     const jobs =
         document.querySelectorAll(".job-card-full");
 
-
     jobs.forEach(function(job) {
 
         const jobText =
@@ -85,7 +84,11 @@ function searchJobs() {
         }
 
     });
-   /* =========================================
+
+}
+
+
+/* =========================================
    GOOGLE ANALYTICS
 ========================================= */
 
@@ -94,21 +97,14 @@ const exploreButton =
 
 if (exploreButton) {
 
-    exploreButton.addEventListener("click", function (event) {
+    exploreButton.addEventListener("click", function() {
 
-        event.preventDefault();
+        console.log("EXPLORE BUTTON CLICKED");
 
         gtag("event", "explore_opportunities_click", {
-
-            event_callback: function () {
-                debug_mode: true;
-                window.location.href = "jobs.html";
-            }
-
+            debug_mode: true
         });
 
     });
-
-}
 
 }
